@@ -1,6 +1,7 @@
 /* ============================================================
    SMOKE SCREEN USA & CANADA — Main Stylesheet
-   Design System: Dark bg, Red accents, Inter font
+   Design System: Dark bg, Brand Orange accents, Inter font
+   Brand primary: #BF491B (from smoke-screen.com)
    ============================================================ */
 
 /* ---------- Reset & Base ---------- */
@@ -10,8 +11,8 @@
   --bg:        #0D0D0D;
   --bg-card:   #1A1A1A;
   --bg-mid:    #2E2E2E;
-  --red:       #E8001D;
-  --red-hover: #C0001A;
+  --red:       #BF491B;   /* Smoke Screen brand orange */
+  --red-hover: #A03914;
   --white:     #FFFFFF;
   --muted:     #999999;
   --border:    rgba(255,255,255,0.08);
@@ -230,8 +231,8 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(232,0,29,0.12);
-  border: 1px solid rgba(232,0,29,0.3);
+  background: rgba(191,73,27,0.12);
+  border: 1px solid rgba(191,73,27,0.3);
   border-radius: var(--radius-pill);
   padding: 6px 16px;
   font-size: 0.75rem;
@@ -288,7 +289,7 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
 .why-card:hover { border-color: var(--red); transform: translateY(-4px); }
 .why-icon {
   width: 52px; height: 52px;
-  background: rgba(232,0,29,0.1);
+  background: rgba(191,73,27,0.1);
   border-radius: var(--radius);
   display: flex;
   align-items: center;
@@ -309,7 +310,7 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
   display: flex;
   flex-direction: column;
 }
-.product-card:hover { border-color: var(--red); transform: translateY(-4px); box-shadow: 0 0 24px rgba(232,0,29,0.15); }
+.product-card:hover { border-color: var(--red); transform: translateY(-4px); box-shadow: 0 0 24px rgba(191,73,27,0.15); }
 .product-card-img {
   aspect-ratio: 16/9;
   background: var(--bg-mid);
@@ -423,7 +424,7 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
   align-items: center;
   justify-content: center;
   margin: 0 auto 24px;
-  box-shadow: 0 0 32px rgba(232,0,29,0.4);
+  box-shadow: 0 0 32px rgba(191,73,27,0.4);
 }
 .step h3 { font-size: 1.1rem; margin-bottom: 12px; }
 .step p { font-size: 0.875rem; }
@@ -445,7 +446,7 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
 
 /* ---------- Contact Form ---------- */
 .contact-form-section {
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(232,0,29,0.04) 100%);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(191,73,27,0.04) 100%);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 48px;
@@ -504,7 +505,7 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
 
 /* ---------- CTA Banner ---------- */
 .cta-banner {
-  background: linear-gradient(135deg, var(--red) 0%, #8B0010 100%);
+  background: linear-gradient(135deg, var(--red) 0%, #7A2E0A 100%);
   border-radius: var(--radius);
   padding: 60px 48px;
   display: flex;
@@ -517,7 +518,7 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
 .cta-banner p { color: rgba(255,255,255,0.75); margin-top: 8px; }
 .btn-white {
   background: var(--white);
-  color: var(--red);
+  color: #7A2E0A;
   border-color: var(--white);
   font-weight: 800;
 }
@@ -558,7 +559,7 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
 /* ---------- Page Hero (inner pages) ---------- */
 .page-hero {
   padding: 130px 0 60px;
-  background: linear-gradient(180deg, rgba(232,0,29,0.08) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(191,73,27,0.08) 0%, transparent 100%);
   border-bottom: 1px solid var(--border);
 }
 .page-hero .label { margin-bottom: 12px; }
@@ -656,8 +657,8 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
 .thank-you-content { max-width: 560px; }
 .thank-you-icon {
   width: 96px; height: 96px;
-  background: rgba(232,0,29,0.1);
-  border: 2px solid rgba(232,0,29,0.3);
+  background: rgba(191,73,27,0.1);
+  border: 2px solid rgba(191,73,27,0.3);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -675,7 +676,7 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
 .contact-item { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 28px; }
 .contact-item-icon {
   width: 44px; height: 44px; flex-shrink: 0;
-  background: rgba(232,0,29,0.1);
+  background: rgba(191,73,27,0.1);
   border-radius: var(--radius);
   display: flex; align-items: center; justify-content: center;
   font-size: 1.1rem;
@@ -720,7 +721,4 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
 }
 
 @media (max-width: 480px) {
-  .hero-ctas { flex-direction: column; align-items: flex-start; }
-  .hero-stats { gap: 24px; }
-  .industry-grid { grid-template-columns: repeat(2, 1fr); }
-}
+  .hero-ctas { flex-direction: column; align-items: flex-
