@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Fog Products — Smoke Screen USA &amp; Canada | Full Range</title>
+  <meta name="description" content="Browse the complete Smoke Screen security fog product range for USA and Canada. Sentinel generators, accessories, consumables, and IP security platforms." />
+  <meta name="keywords" content="smoke screen security products USA Canada, sentinel fog generator, security fog machine, rapid deploy fog, sentry security, sentience monitoring" />
+  <link rel="canonical" href="https://us.smoke-screen.com/products.html" />
+  <meta property="og:title" content="Security Fog Products — Smoke Screen USA &amp; Canada" />
+  <meta property="og:description" content="Full range of Smoke Screen security fog generators, accessories, and IP monitoring solutions for the US and Canadian market." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.revealed { opacity: 1; transform: translateY(0); }
+
+    .products-layout {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .products-sidebar {
+      position: sticky;
+      top: 90px;
+    }
+    .sidebar-nav { margin-bottom: 28px; }
+    .sidebar-nav-group { margin-bottom: 20px; }
+    .sidebar-nav-group-label {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--red); margin-bottom: 8px; display: block;
+    }
+    .sidebar-nav a {
+      display: block; padding: 6px 0; font-size: 0.83rem; color: var(--muted);
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      transition: color 0.2s, padding-left 0.2s;
+    }
+    .sidebar-nav a:hover, .sidebar-nav a.active { color: #fff; padding-left: 8px; }
+    .sidebar-cta {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 24px; text-align: center;
+    }
+    .sidebar-cta h4 { font-size: 1rem; font-weight: 900; margin-bottom: 8px; }
+    .sidebar-cta p { font-size: 0.8rem; color: var(--muted); margin-bottom: 20px; line-height: 1.5; }
+
+    .category-section { margin-bottom: 16px; }
+    .category-section-header {
+      position: sticky; top: 70px; z-index: 5;
+      background: var(--bg); padding: 16px 0 12px;
+      border-bottom: 2px solid var(--red);
+      margin-bottom: 0;
+    }
+    .category-section-header .label { margin-bottom: 4px; }
+    .category-section-header h2 { font-size: 1.4rem; font-weight: 900; }
+
+    .product-entry {
+      display: grid; grid-template-columns: 260px 1fr;
+      gap: 36px; padding: 40px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .product-entry:last-child { border-bottom: none; }
+    .product-entry-img {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+      aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
+    }
+    .product-entry-img img {
+      width: 100%; height: 100%; object-fit: contain; padding: 12px;
+    }
+    .img-placeholder {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      width: 100%; height: 100%; gap: 8px; padding: 24px; text-align: center;
+    }
+    .img-placeholder span {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .product-cat-tag {
+      display: inline-block; font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 8px;
+      padding: 3px 8px; border: 1px solid rgba(232,0,29,0.3);
+      border-radius: 3px;
+    }
+    .product-entry h2 {
+      font-size: 1.7rem; font-weight: 900; margin-bottom: 6px; color: #fff;
+    }
+    .product-tagline {
+      font-size: 0.95rem; color: var(--muted); margin-bottom: 20px;
+      line-height: 1.55; border-left: 3px solid var(--red); padding-left: 12px;
+    }
+    .product-features {
+      list-style: none; margin: 0 0 24px; border-top: 1px solid var(--border);
+    }
+    .product-features li {
+      display: flex; gap: 10px; padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 0.875rem; color: var(--muted); align-items: flex-start;
+    }
+    .product-features li::before {
+      content: '→'; color: var(--red); font-weight: 900; flex-shrink: 0; margin-top: 1px;
+    }
+    .product-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .consumables-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px; padding: 32px 0;
+    }
+    .consumable-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden; transition: border-color 0.3s;
+    }
+    .consumable-card:hover { border-color: rgba(232,0,29,0.4); }
+    .consumable-card-img {
+      height: 180px; background: rgba(255,255,255,0.02);
+      display: flex; align-items: center; justify-content: center; overflow: hidden;
+    }
+    .consumable-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 16px; }
+    .consumable-card-body { padding: 20px; }
+    .consumable-card-body h3 { font-size: 1rem; font-weight: 900; margin-bottom: 6px; }
+    .consumable-card-body p { font-size: 0.82rem; color: var(--muted); line-height: 1.5; margin-bottom: 16px; }
+
+    @media (max-width: 1024px) {
+      .products-layout { grid-template-columns: 1fr; }
+      .products-sidebar { position: static; }
+      .product-entry { grid-template-columns: 200px 1fr; gap: 24px; }
+    }
+    @media (max-width: 768px) {
+      .product-entry { grid-template-columns: 1fr; }
+      .product-entry-img { aspect-ratio: 16/9; max-height: 240px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg viewBox="0 0 1451.04 556.87" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M34.7,173.49a114.91,114.91,0,0,0,81.22,33.57c22.5,0,36.23-9.54,36.23-21.74,0-14.49-16.4-20.21-43.47-25.93C66.73,151,8,140.33,8,80.08,8,37.37,44.23.38,109.44.38c40.8,0,76.26,12.2,103.34,35.45L176.93,82.74c-21.36-17.54-49.19-26.31-71.69-26.31-21.73,0-30.12,8.77-30.12,19.83,0,13.34,15.64,17.92,43.84,23.26,42,8.76,99.92,21,99.92,78.55,0,51.1-37.75,85-106,85-51.47,0-87.31-16-112.86-40.43Z M472.48,86.94,408,258.53h-29L315,86.94V258.53H249.4V4.19h91.13l53,144.14L446.93,4.19h91.14V258.53H472.48Z M707,0c77.79,0,135.75,54.15,135.75,131.55S784.81,263.11,707,263.11,570.9,209,570.9,131.55,629.23,0,707,0Zm0,58c-42.33,0-69.39,32-69.39,73.6,0,41.18,27.06,73.59,69.39,73.59,42,0,69-32.41,69-73.59C776,90,749,58,707,58Z M958.73,162.81l-17.16,21.36v74.36H876V4.19h65.59V108.66L1019.74,4.19h80.84l-98.76,119,104.1,135.37h-80.46Z M1125.39,4.19h186.47V59.48H1191V101.8h118.2v55.67H1191v45.77h120.88v55.29H1125.39Z M34.7,467.26a114.94,114.94,0,0,0,81.22,33.56c22.5,0,36.23-9.54,36.23-21.74,0-14.49-16.4-20.21-43.47-25.93C66.73,444.76,8,434.09,8,373.84c0-42.71,36.23-79.7,101.44-79.7,40.8,0,76.26,12.21,103.34,35.47L176.93,376.5c-21.36-17.54-49.19-26.3-71.69-26.3C83.51,350.2,75.12,359,75.12,370c0,13.34,15.64,17.92,43.84,23.26,42,8.77,99.92,21,99.92,78.56,0,51.09-37.75,85-106,85-51.47,0-87.31-16-112.86-40.42Z M236.43,425.31c0-78.55,59.49-131.55,135.76-131.55,63.3,0,96.09,34.69,112.87,68.26L428.63,388.7c-8.4-20.2-30.13-37-56.44-37-39.66,0-69,32-69,73.59s29.36,73.59,69,73.59c26.31,0,48-16.78,56.44-37l56.43,26.7c-16.4,32.79-49.57,68.25-112.87,68.25C295.92,556.87,236.43,503.48,236.43,425.31Z M612.45,466.12H578.89v86.17h-65.6V298H640.66c56.44,0,88.47,37.37,88.47,84.65,0,44.23-27.08,67.88-50.71,76.27l51.85,93.42H655.16Zm18.3-112.88H578.89v57.21h51.86c17.16,0,31.65-11.07,31.65-28.61S647.91,353.24,630.75,353.24Z M765.38,298H951.85v55.29H831v42.33H949.18v55.67H831V497H951.85v55.29H765.38Z M990,298h186.47v55.29H1055.59v42.33H1173.8v55.67H1055.59V497h120.88v55.29H990Z M1280.21,398.62V552.29h-65.59V298h67.5l103,146.43V298h66V552.29h-63.3Z"/></svg>
+      <div class="nav-logo-text"><span class="region">USA &amp; Canada</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="products.html" class="active">Products</a><a href="videos.html">Videos</a><a href="applications.html">Applications</a><a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Get a Free Quote</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="index.html">Home</a><a href="products.html">Products</a><a href="videos.html">Videos</a><a href="applications.html">Applications</a><a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="label">Product Range</div>
+    <h1>Complete Smoke Screen<br/>product catalogue</h1>
+    <p>From compact standalone units to full enterprise monitoring platforms — every product for the USA &amp; Canada market.</p>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="section">
+  <div class="container">
+    <div class="products-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="products-sidebar">
+        <nav class="sidebar-nav">
+          <div class="sidebar-nav-group">
+            <span class="sidebar-nav-group-label">Security Smoke</span>
+            <a href="#sentinel-sc20">Sentinel SC20</a>
+            <a href="#sentinel-go">Sentinel Go</a>
+            <a href="#sentinel-s35">Sentinel S35</a>
+            <a href="#sentinel-s55">Sentinel S55</a>
+            <a href="#sentinel-s70">Sentinel S70</a>
+            <a href="#sentinel-s100">Sentinel S100</a>
+            <a href="#sentinel-s150">Sentinel S150</a>
+          </div>
+          <div class="sidebar-nav-group">
+            <span class="sidebar-nav-group-label">Security Products</span>
+            <a href="#xenon-flash">Xenon Flash</a>
+            <a href="#sound-barrier">Sound Barrier S3B</a>
+            <a href="#ss-interface">SS Interface</a>
+            <a href="#rapid-deploy">Rapid Deploy</a>
+            <a href="#sentry">Sentry</a>
+          </div>
+          <div class="sidebar-nav-group">
+            <span class="sidebar-nav-group-label">Consumables</span>
+            <a href="#fluid-bladder">Fluid Bladder 500ml</a>
+            <a href="#fluid-r">Fluid R Swift Fit</a>
+            <a href="#batteries">Batteries</a>
+          </div>
+          <div class="sidebar-nav-group">
+            <span class="sidebar-nav-group-label">IP Security</span>
+            <a href="#node-4g">Node 4G</a>
+            <a href="#sentience">Sentience</a>
+          </div>
+        </nav>
+        <div class="sidebar-cta">
+          <h4>Not sure which product?</h4>
+          <p>Our USA &amp; Canada team will assess your site and recommend the right system — free of charge.</p>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Talk to an Expert</a>
+          <p style="font-size:0.72rem;color:var(--muted);margin-top:10px;margin-bottom:0;">Responds within 24 hrs</p>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main>
+
+        <!-- ── SECURITY SMOKE PRODUCTS ── -->
+        <div class="category-section">
+          <div class="category-section-header">
+            <div class="label">Category 01</div>
+            <h2>Security Smoke Products</h2>
+          </div>
+
+          <!-- SC20 -->
+          <div class="product-entry reveal" id="sentinel-sc20">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/SC20-03.png" alt="Sentinel SC20 security fog generator" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Smoke Products</span>
+              <h2>Sentinel SC20</h2>
+              <p class="product-tagline">Tiny, but mighty. Small in size, monumental in protection — the ideal entry-level fog generator without compromising on performance.</p>
+              <ul class="product-features">
+                <li>Smallest and lightest Sentinel fog generator</li>
+                <li>40-second initial burst for maximum fog generation</li>
+                <li>Minimum 40 minutes off-mains via battery back-up</li>
+                <li>Energy save mode reduces running costs</li>
+                <li>Automatic re-firing via screen-sensor technology</li>
+                <li>3-year warranty included</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sentinel-sc20/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sentinel Go -->
+          <div class="product-entry reveal" id="sentinel-go">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/Sentinel-Go-Main-Title-V1.png" alt="Sentinel Go battery-powered fog generator" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Smoke Products</span>
+              <h2>Sentinel Go</h2>
+              <p class="product-tagline">Unleash impenetrable defence anywhere — the battery-powered generator that brings Smoke Screen protection to the most remote locations.</p>
+              <ul class="product-features">
+                <li>Runs entirely on batteries — no mains power required</li>
+                <li>Over 4 minutes of continuous fog output</li>
+                <li>Instantly heated coil for rapid deployment</li>
+                <li>24V system with intelligent power management</li>
+                <li>Ideal for residential, rural USA, and off-grid Canadian properties</li>
+                <li>Integrates with existing home alarm systems</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sentinel-go/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- S35 -->
+          <div class="product-entry reveal" id="sentinel-s35">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/S35-04.png" alt="Sentinel S35 security fog generator" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Smoke Products</span>
+              <h2>Sentinel S35</h2>
+              <p class="product-tagline">The best-selling machine in the Sentinel range. Compact size and impressive performance make the S35 suitable for almost any application.</p>
+              <ul class="product-features">
+                <li>Competitive pricing, easy installation, low running costs — 3-year warranty</li>
+                <li>Powerful Turbo Mode anti-raid burst with multi-nozzle options</li>
+                <li>Dry fog — leaves no residue, safe for goods and electronics</li>
+                <li>Persistent fog lasts up to 40 minutes unventilated</li>
+                <li>Battery back-up for off-mains operation (min. 1 hour)</li>
+                <li>Compliant with IEC62642:8 and EN50131:8</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sentinel-s35/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- S55 -->
+          <div class="product-entry reveal" id="sentinel-s55">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/S55-1.png" alt="Sentinel S55 security fog generator" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Smoke Products</span>
+              <h2>Sentinel S55</h2>
+              <p class="product-tagline">A step up from the S35 in output — perfect when you need a little more from your security fog generator.</p>
+              <ul class="product-features">
+                <li>Higher output than S35 with powerful Turbo Mode anti-raid burst</li>
+                <li>Full heater redundancy protects against critical failure</li>
+                <li>Dry fog — no residue, won't damage goods</li>
+                <li>Persistent fog up to 40 minutes unventilated</li>
+                <li>Battery back-up for off-mains operation (min. 1 hour)</li>
+                <li>Compliant with IEC62642:8 and EN50131:8</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sentinel-s55/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- S70 -->
+          <div class="product-entry reveal" id="sentinel-s70">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/S70-1.png" alt="Sentinel S70 security fog generator" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Smoke Products</span>
+              <h2>Sentinel S70</h2>
+              <p class="product-tagline">The workhorse of the Sentinel range and our most popular generator — suitable for shops, offices, workshops, fuel stations, and jewellers.</p>
+              <ul class="product-features">
+                <li>Designed to be installed in any configuration</li>
+                <li>Compact size with impressive performance — best versatility</li>
+                <li>Powerful Turbo Mode and multi-nozzle options</li>
+                <li>Dry fog — no residue, safe for all goods</li>
+                <li>Fog lasts up to 40 minutes unventilated</li>
+                <li>Battery back-up (min. 1 hour), energy-saving mode, 3-year warranty</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sentinel-s70/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- S100 -->
+          <div class="product-entry reveal" id="sentinel-s100">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/S100-07-scaled.jpg" alt="Sentinel S100 security fog generator" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Smoke Products</span>
+              <h2>Sentinel S100</h2>
+              <p class="product-tagline">One of our most powerful generators — incredibly long first burst protecting huge areas from ATM lobbies to warehouses.</p>
+              <ul class="product-features">
+                <li>Extremely long initial fog burst — covers large areas immediately</li>
+                <li>Large steel mass acts as extra energy store during power cuts</li>
+                <li>Intelligently monitored Swift-Fit fluid system</li>
+                <li>Compatible with Sentinel+ IP cards and Sentience monitoring platform</li>
+                <li>Battery back-up (min. 1 hour), dry fog — no residue</li>
+                <li>Compliant with IEC62642:8 and EN50131:8</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sentinel-s100/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- S150 -->
+          <div class="product-entry reveal" id="sentinel-s150">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/S150-07.png" alt="Sentinel S150 security fog generator" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Smoke Products</span>
+              <h2>Sentinel S150</h2>
+              <p class="product-tagline">Our newest and fastest generator — dual pump, dual helix heater block for extreme fog production at record speed.</p>
+              <ul class="product-features">
+                <li>Extreme fog production to very high obscuration levels</li>
+                <li>Dual pump, dual helix heater block — fastest in the range</li>
+                <li>Individually adjustable dual nozzles to tune coverage</li>
+                <li>High velocity fog allows higher-than-normal mounting</li>
+                <li>Compatible with Sentinel+ IP cards and Sentience monitoring</li>
+                <li>Battery back-up (min. 1 hour), dry fog, energy-saving mode</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sentinel-s150/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- /security smoke -->
+
+        <!-- ── SECURITY PRODUCTS ── -->
+        <div class="category-section" style="margin-top:48px;">
+          <div class="category-section-header">
+            <div class="label">Category 02</div>
+            <h2>Security Products</h2>
+          </div>
+
+          <!-- Xenon Flash -->
+          <div class="product-entry reveal" id="xenon-flash">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/Xenon-04.jpg" alt="Xenon Flash strobe security accessory" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Products</span>
+              <h2>Xenon Flash</h2>
+              <p class="product-tagline">By producing an intense light effect, the Xenon Flash strobe massively magnifies the screening properties of security fog.</p>
+              <ul class="product-features">
+                <li>Combines with security fog to create near-total disorientation</li>
+                <li>Allows smaller fog generators to achieve greater deterrent effect</li>
+                <li>Wall or ceiling mount — unobtrusive installation</li>
+                <li>Easy installation and competitive pricing</li>
+                <li>Simple integration with any Smoke Screen or existing alarm system</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/xenon-flash/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sound Barrier S3B -->
+          <div class="product-entry reveal" id="sound-barrier">
+            <div class="product-entry-img">
+              <div class="img-placeholder">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:56px;opacity:0.3;"><path d="M30 10L18 22H8v16h10l12 12V10zM36 20c2.5 2.5 4 6 4 10s-1.5 7.5-4 10M42 14c5 5 8 12 8 16s-3 11-8 16" stroke="#E8001D" stroke-width="2.5" stroke-linecap="round"/></svg>
+                <span>Sound Barrier S3B</span>
+              </div>
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Products</span>
+              <h2>Sound Barrier S3B</h2>
+              <p class="product-tagline">You've blinded them with smoke — now deafen them with noise. An intolerable wall of sound forces any intruder to leave immediately.</p>
+              <ul class="product-features">
+                <li>Creates an intolerable wall of sound upon alarm activation</li>
+                <li>Complements security fog for complete sensory disruption</li>
+                <li>Perfectly safe — designed for permanent installation</li>
+                <li>Unobtrusively designed for minimalist environments</li>
+                <li>Wall or ceiling mount, easy installation</li>
+                <li>Simple integration with Smoke Screen or any alarm system</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sound-barrier-s3b/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SS Interface -->
+          <div class="product-entry reveal" id="ss-interface">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/SSI-Installed.png" alt="Smoke Screen Interface control panel" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Products</span>
+              <h2>Smoke Screen Interface</h2>
+              <p class="product-tagline">Control, monitor and test your Smoke Screen system with maximum visibility and secure key activation.</p>
+              <ul class="product-features">
+                <li>LED status indicators for system health and fluid levels</li>
+                <li>Initiate a system test with the press of a button</li>
+                <li>Secure key activation prevents unauthorised operation</li>
+                <li>Recommended for all permanent Sentinel installations</li>
+                <li>Makes servicing and isolation straightforward for installers</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/smoke-screen-interface/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rapid Deploy -->
+          <div class="product-entry reveal" id="rapid-deploy">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/7-Right-Face-Deploy_.png" alt="Rapid Deploy portable fog generator" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Products</span>
+              <h2>Rapid Deploy</h2>
+              <p class="product-tagline">The portable security guard — a stand-alone defence against intruders. No engineer, no alarm integration, no installation required.</p>
+              <ul class="product-features">
+                <li>Portable stand-alone system — just plug in and it's ready</li>
+                <li>Activated by radio key fob — no alarm panel integration needed</li>
+                <li>Built-in dual-tech detector with 10m effective range</li>
+                <li>90-second initial burst for maximum fog generation</li>
+                <li>Persistent fog up to 40 minutes unventilated</li>
+                <li>Energy save mode, 3-year warranty, compliant with IEC62642:8</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/rapid-deploy/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sentry -->
+          <div class="product-entry reveal" id="sentry">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2025/01/Sentry-1.png" alt="Sentry mobile security fog unit" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">Security Products</span>
+              <h2>Sentry</h2>
+              <p class="product-tagline">The elite mobile guard — wheel it in, plug it in, and instantly convert any vulnerable space into a fortress.</p>
+              <ul class="product-features">
+                <li>Housed in a robust flight case — fully mobile, no permanent installation</li>
+                <li>50-second initial burst, fires up to 5 times on a single fluid fill</li>
+                <li>Built-in camera for real-time event capture</li>
+                <li>4G modem for remote cloud connectivity and monitoring</li>
+                <li>Remote control for easy arming and disarming</li>
+                <li>Automatic re-firing via screen-sensor technology</li>
+                <li>£10 million product and public liability insurance included</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sentry/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- /security products -->
+
+        <!-- ── SECURITY CONSUMABLES ── -->
+        <div class="category-section" style="margin-top:48px;">
+          <div class="category-section-header">
+            <div class="label">Category 03</div>
+            <h2>Security Consumables</h2>
+          </div>
+          <div class="consumables-grid reveal">
+
+            <div class="consumable-card" id="fluid-bladder">
+              <div class="consumable-card-img">
+                <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/Fluid-Bladder-01.jpg" alt="Fluid Bladder 500ml" loading="lazy" />
+              </div>
+              <div class="consumable-card-body">
+                <span class="product-cat-tag">Consumables</span>
+                <h3>Fluid Bladder 500ml</h3>
+                <p>Fog fluid consumable for the Sentinel S35, Sentinel Go and SC20. Easy installation — insert the fluid needle into the hole marked 'OUT' on the head of the fluid bag.</p>
+                <a href="contact.html" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">Request a Quote</a>
+              </div>
+            </div>
+
+            <div class="consumable-card" id="fluid-r">
+              <div class="consumable-card-img">
+                <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/Fluid-Hand.png" alt="Fluid R Swift Fit fog fluid" loading="lazy" />
+              </div>
+              <div class="consumable-card-body">
+                <span class="product-cat-tag">Consumables</span>
+                <h3>Fluid R Swift Fit</h3>
+                <p>All-round security fog fluid for any application. Quick-connect design makes exchange fast and easy. Tamper-proof casing alerts if accessed, sealed to ensure only genuine fluid is used.</p>
+                <a href="contact.html" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">Request a Quote</a>
+              </div>
+            </div>
+
+            <div class="consumable-card" id="batteries">
+              <div class="consumable-card-img">
+                <div class="img-placeholder" style="height:180px;">
+                  <svg viewBox="0 0 60 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:64px;opacity:0.3;"><rect x="1" y="4" width="52" height="24" rx="4" stroke="#E8001D" stroke-width="2"/><path d="M53 11v10" stroke="#E8001D" stroke-width="3" stroke-linecap="round"/><path d="M20 16h20M30 10v12" stroke="#E8001D" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span>Batteries</span>
+                </div>
+              </div>
+              <div class="consumable-card-body">
+                <span class="product-cat-tag">Consumables</span>
+                <h3>Batteries</h3>
+                <p>12V back-up batteries providing full system operation for up to 90 minutes after complete loss of external power. Designed to fit securely within the generator body.</p>
+                <a href="contact.html" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">Request a Quote</a>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- /consumables -->
+
+        <!-- ── IP SECURITY PRODUCTS ── -->
+        <div class="category-section" style="margin-top:48px;">
+          <div class="category-section-header">
+            <div class="label">Category 04</div>
+            <h2>IP Security Products</h2>
+          </div>
+
+          <!-- Node 4G -->
+          <div class="product-entry reveal" id="node-4g">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/node-4g-6.png" alt="Node 4G wireless router for Sentience" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">IP Security Products</span>
+              <h2>Node 4G</h2>
+              <p class="product-tagline">Wireless 4G router that connects your Sentinel fog generators to the Sentience cloud monitoring platform — wherever your site is located.</p>
+              <ul class="product-features">
+                <li>Connects IP-card-equipped Sentinels to Sentience via 4G</li>
+                <li>Enables remote monitoring and control without site Wi-Fi dependency</li>
+                <li>Reliable connectivity for large or distributed fog estates</li>
+                <li>Ideal for sites without reliable broadband access</li>
+                <li>Simple installation and zero ongoing configuration</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/node-4g/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sentience -->
+          <div class="product-entry reveal" id="sentience">
+            <div class="product-entry-img">
+              <img src="https://www.smoke-screen.com/wp-content/uploads/2024/10/Sentience-01.jpg" alt="Sentience monitoring platform dashboard" loading="lazy" />
+            </div>
+            <div>
+              <span class="product-cat-tag">IP Security Products</span>
+              <h2>Sentience</h2>
+              <p class="product-tagline">The cloud monitoring platform that provides full visibility and guaranteed availability across large estates of Smoke Screen fog generators.</p>
+              <ul class="product-features">
+                <li>Cloud-based and on-premise deployment options</li>
+                <li>Open API for integration with existing command and control platforms</li>
+                <li>One-glance dashboard showing real-time estate health</li>
+                <li>Email alerting configurable for multiple users and event types</li>
+                <li>Remote command, control, and commissioning for installers</li>
+                <li>Event logs remotely downloadable — compatible with Sentinel+ and Sentry</li>
+              </ul>
+              <div class="product-actions">
+                <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+                <a href="https://www.smoke-screen.com/products/sentience/" target="_blank" rel="noopener" class="btn btn-outline">Full Specs ↗</a>
+              </div>
+            </div>
+          </div>
+        </div><!-- /ip products -->
+
+      </main>
+    </div><!-- /products-layout -->
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div>
+        <h2>Ready to protect your business?</h2>
+        <p>Our USA &amp; Canada team will recommend the right system for your site — free of charge.</p>
+      </div>
+      <a href="contact.html" class="btn btn-white btn-lg">Get a Free Quote →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div style="border-bottom:1px solid var(--border);padding-bottom:24px;margin-bottom:28px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+      <div style="border:1.5px solid var(--red);border-radius:6px;padding:8px 20px;display:inline-flex;flex-direction:column;align-items:center;gap:3px;flex-shrink:0;">
+        <span style="font-size:0.5rem;font-weight:700;color:var(--red);letter-spacing:0.18em;text-transform:uppercase;">Official Reseller 2026</span>
+        <span style="font-size:0.9rem;font-weight:900;color:#fff;letter-spacing:0.05em;">SMOKE SCREEN</span>
+        <span style="font-size:0.5rem;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;">USA &amp; Canada</span>
+      </div>
+      <p style="font-size:0.8rem;color:var(--muted);line-height:1.6;max-width:480px;margin:0;">Authorized distributor of Smoke Screen security fog systems across the United States and Canada. All products are genuine Smoke Screen manufactured and certified.</p>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo"><svg viewBox="0 0 1451.04 556.87" xmlns="http://www.w3.org/2000/svg" style="height:22px;"><path fill="#FFFFFF" d="M34.7,173.49a114.91,114.91,0,0,0,81.22,33.57c22.5,0,36.23-9.54,36.23-21.74,0-14.49-16.4-20.21-43.47-25.93C66.73,151,8,140.33,8,80.08,8,37.37,44.23.38,109.44.38c40.8,0,76.26,12.2,103.34,35.45L176.93,82.74c-21.36-17.54-49.19-26.31-71.69-26.31-21.73,0-30.12,8.77-30.12,19.83,0,13.34,15.64,17.92,43.84,23.26,42,8.76,99.92,21,99.92,78.55,0,51.1-37.75,85-106,85-51.47,0-87.31-16-112.86-40.43Z M472.48,86.94,408,258.53h-29L315,86.94V258.53H249.4V4.19h91.13l53,144.14L446.93,4.19h91.14V258.53H472.48Z"/></svg></div>
+        <p>Professional security fog systems protecting businesses across the United States and Canada.</p>
+      </div>
+      <div class="footer-col"><h5>Smoke Products</h5><ul>
+        <li><a href="products.html#sentinel-sc20">Sentinel SC20</a></li>
+        <li><a href="products.html#sentinel-go">Sentinel Go</a></li>
+        <li><a href="products.html#sentinel-s35">Sentinel S35</a></li>
+        <li><a href="products.html#sentinel-s70">Sentinel S70</a></li>
+        <li><a href="products.html#sentinel-s150">Sentinel S150</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Other Products</h5><ul>
+        <li><a href="products.html#rapid-deploy">Rapid Deploy</a></li>
+        <li><a href="products.html#sentry">Sentry</a></li>
+        <li><a href="products.html#xenon-flash">Xenon Flash</a></li>
+        <li><a href="products.html#sentience">Sentience</a></li>
+        <li><a href="products.html#node-4g">Node 4G</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul>
+        <li><a href="mailto:us@smoke-screen.com">🇺🇸 US Enquiries</a></li>
+        <li><a href="mailto:canada@smoke-screen.com">🇨🇦 Canada Enquiries</a></li>
+        <li><a href="contact.html">Get a Quote →</a></li>
+        <li><a href="https://www.smoke-screen.com" target="_blank" rel="noopener">Global Site ↗</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Smoke Screen Security. All rights reserved.</p><p><a href="https://www.smoke-screen.com" target="_blank" rel="noopener">www.smoke-screen.com</a></p></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  (function() {
+    const links = document.querySelectorAll('.sidebar-nav a');
+    const sections = [];
+    links.forEach(function(l) {
+      const id = l.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) sections.push({ el: el, link: l });
+    });
+    window.addEventListener('scroll', function() {
+      const scrollY = window.scrollY + 200;
+      let current = sections[0];
+      sections.forEach(function(s) { if (s.el.offsetTop <= scrollY) current = s; });
+      links.forEach(function(l) { l.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    }, { passive: true });
+  })();
+</script>
+</body>
+</html>
