@@ -134,7 +134,7 @@ p  { font-size: 1rem; color: var(--muted); line-height: 1.7; }
   gap: 12px;
   flex-shrink: 0;
 }
-.nav-logo svg { height: 28px; width: auto; }
+.nav-logo svg { height: 34px; width: auto; }
 .nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
 .nav-logo-text .brand { font-size: 1rem; font-weight: 900; color: var(--white); letter-spacing: 0.05em; }
 .nav-logo-text .region { font-size: 0.65rem; font-weight: 600; color: var(--red); text-transform: uppercase; letter-spacing: 0.15em; }
