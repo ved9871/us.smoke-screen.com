@@ -125,7 +125,7 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!validateForm(form)) return;
-      const successDiv = form.querySelector('successDiv');
+      const successDiv = form.querySelector('.form-success');
       if (successDiv) {
         form.querySelector('.form-fields').style.display = 'none';
         successDiv.style.display = 'block';
@@ -148,7 +148,7 @@
       }
     });
     const emailField = form.querySelector('input[type="email"]');
-    if (emailField && emailField.value && !/^[^\s@]+@[^\s@]+\[^\s@]+$/.test(emailField.value)) {
+    if (emailField && emailField.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value)) {
       emailField.style.borderColor = 'var(--red)';
       valid = false;
     }
