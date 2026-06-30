@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Security Fog Applications, Smoke Screen USA & Canada</title>
-  <meta name="description" content="Security fog solutions for retail stores, warehouses, pharmacies, schools, jewellery stores, offices, and more. See how Smoke Screen protects every industry across the USA and Canada." />
+  <meta name="description" content="Security fog solutions for retail stores, warehouses, pharmacies, schools, jewellery stores, offices, car dealerships, cannabis dispensaries, and more. Smoke Screen protects every industry across the USA and Canada." />
   <link rel="canonical" href="https://us.smoke-screen.com/applications.html" />
   <meta property="og:title" content="Security Fog Applications, Smoke Screen USA & Canada" />
   <meta property="og:type" content="website" />
@@ -22,6 +22,28 @@
       font-size: 0.95rem;
     }
     .why-list li::before { content: '→'; color: var(--red); font-weight: 900; flex-shrink: 0; margin-top: 1px; }
+    /* App card icon area — replaces cartoonish emoji */
+    .app-card-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 140px;
+      border-bottom: 2px solid rgba(191,73,27,0.35);
+      position: relative;
+      overflow: hidden;
+    }
+    .app-card-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 60%, rgba(191,73,27,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .app-card-img svg {
+      position: relative;
+      z-index: 1;
+      filter: drop-shadow(0 1px 6px rgba(0,0,0,0.4));
+    }
   </style>
 </head>
 <body>
@@ -64,228 +86,249 @@
     </div>
     <div class="app-grid">
 
+      <!-- RETAIL STORES -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#1a2f4a,#0F1B2D);font-size:2rem;">🏪</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#1a3050,#0d1f35);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for retail</p>
           <h3>Retail Stores</h3>
-          <p>Smash-and-grab attacks, after-hours break-ins, and till raids, security fog stops retail crime before inventory walks out the door. Trusted by chains and independents across the USA and Canada.</p>
+          <p>Smash-and-grab attacks, after-hours break-ins, and till raids — security fog stops retail crime before inventory walks out the door. Trusted by chains and independents across the USA and Canada.</p>
         </div>
       </div>
 
+      <!-- JEWELLERY STORES -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#2a1f3d,#1a1029);font-size:2rem;">💎</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#1e1535,#100d22);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 3l-4 6 10 12 10-12-4-6H6z"/>
+            <path d="M2 9h20"/>
+            <path d="M10 3l-2 6M14 3l2 6M12 3l-1 6h2l-1-6z"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for jewellery stores</p>
           <h3>Jewellery Stores</h3>
-          <p>High-value goods demand high-certainty protection. Security fog creates instant zero-visibility, making it impossible for attackers to locate and grab stock.</p>
+          <p>High-value goods demand high-certainty protection. Security fog creates instant zero-visibility, making it impossible for attackers to locate and grab display stock during a smash-and-grab raid.</p>
         </div>
       </div>
 
+      <!-- WAREHOUSES -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#1a2f20,#0d1a10);font-size:2rem;">🏭</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#162840,#0d1a28);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 20V9l10-6 10 6v11H2z"/>
+            <path d="M9 20v-7h6v7"/>
+            <line x1="2" y1="20" x2="22" y2="20"/>
+            <line x1="12" y1="3" x2="12" y2="9"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for warehouses</p>
           <h3>Warehouses</h3>
-          <p>Large floor areas covered in under 60 seconds. Warehouse and distribution centres across the USA rely on Smoke Screen to protect high-value inventory overnight.</p>
+          <p>Large floor areas covered in under 60 seconds. Warehouses and distribution centres across the USA rely on Smoke Screen to protect high-value inventory during after-hours break-ins, including ram-raid intrusions.</p>
         </div>
       </div>
 
+      <!-- OFFICES -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#1f2a3d,#121823);font-size:2rem;">🏢</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#1a2540,#0f172a);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2h12a2 2 0 012 2v18H4V4a2 2 0 012-2z"/>
+            <rect x="9" y="11" width="2" height="2"/>
+            <rect x="13" y="11" width="2" height="2"/>
+            <rect x="9" y="7" width="2" height="2"/>
+            <rect x="13" y="7" width="2" height="2"/>
+            <path d="M9 22v-5h6v5"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for offices</p>
           <h3>Offices &amp; Co-working</h3>
-          <p>Server rooms, cash handling areas, and sensitive offices need more than a camera. Smoke Screen adds an active physical deterrent to standard office security systems.</p>
+          <p>Server rooms, cash handling areas, and sensitive offices need more than a camera. Smoke Screen adds an active physical deterrent to standard office security systems — protecting equipment and data assets overnight.</p>
         </div>
       </div>
 
+      <!-- PHARMACIES -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#2e1a1a,#1a0d0d);font-size:2rem;">💊</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#102a2a,#091919);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="8" y="2" width="8" height="20" rx="1"/>
+            <rect x="2" y="8" width="20" height="8" rx="1"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for pharmacies</p>
           <h3>Pharmacies</h3>
-          <p>Prescription medication and controlled substances make pharmacies a prime target. Security fog stops theft attempts and satisfies insurance requirements for active deterrents.</p>
+          <p>Prescription medication and controlled substances make pharmacies a prime target. Security fog stops theft attempts instantly and satisfies insurance requirements for active deterrents across US and Canadian regulations.</p>
         </div>
       </div>
 
+      <!-- SCHOOLS -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#1a2535,#0f1820);font-size:2rem;">🏫</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#1a2535,#0f1825);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6"/>
+            <path d="M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for schools</p>
           <h3>Schools &amp; Campuses</h3>
-          <p>Protect IT suites, storage rooms, and administrative areas after hours. Smoke Screen is non-harmful and insurance approved for educational environments.</p>
+          <p>Protect IT suites, equipment storage, and administrative areas after hours. Smoke Screen is non-harmful, non-toxic, and insurance approved for educational environments across USA and Canada.</p>
         </div>
       </div>
 
+      <!-- RESIDENTIAL -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#1f3020,#111d12);font-size:2rem;">🏠</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#1f2a20,#111c12);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Home security fog systems</p>
           <h3>Residential Homes</h3>
-          <p>The Sentinel Go makes fog security accessible for homeowners, no electrician needed, battery-powered, integrates with your existing alarm. Perfect for rural USA and Canadian properties.</p>
+          <p>The Sentinel Go makes fog security accessible for homeowners — no electrician needed, battery-powered, integrates with your existing alarm. Perfect for rural USA and Canadian properties far from police response.</p>
         </div>
       </div>
 
+      <!-- FUEL STATIONS -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#2a2010,#1a1308);font-size:2rem;">⛽</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#2a1f0d,#1a1308);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 22V7a2 2 0 012-2h6a2 2 0 012 2v15H3z"/>
+            <path d="M13 11h2a2 2 0 012 2v5a2 2 0 002 2"/>
+            <line x1="3" y1="11" x2="13" y2="11"/>
+            <line x1="7" y1="22" x2="9" y2="22"/>
+            <path d="M15 5l3 3-3 3"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for fuel stations</p>
-          <h3>Fuel Stations</h3>
-          <p>Convenience stores and fuel kiosks face high robbery risk. Security fog covers the till area in seconds, protecting staff and stopping cash theft instantly.</p>
+          <h3>Fuel Stations &amp; Forecourts</h3>
+          <p>Convenience stores and fuel kiosks face high robbery risk, particularly overnight. Security fog covers the till area in seconds, protecting staff and stopping cash theft before police can respond.</p>
         </div>
       </div>
 
+      <!-- HEALTHCARE -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#102030,#080f18);font-size:2rem;">🏥</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#1a2535,#0d1520);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <line x1="12" y1="8" x2="12" y2="16"/>
+            <line x1="8" y1="12" x2="16" y2="12"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for healthcare</p>
           <h3>Healthcare Facilities</h3>
-          <p>Hospitals, clinics, and medical supply companies can deploy the Sanna Haze system for dual-purpose security and sanitization fogging across patient areas and storage.</p>
+          <p>Hospitals, clinics, and medical supply companies can deploy security fog to protect pharmaceutical storage, medical equipment, and administrative areas after hours across US and Canadian facilities.</p>
         </div>
       </div>
 
+      <!-- AIRLINES & LOGISTICS -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#1a1030,#0d0820);font-size:2rem;">✈️</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#101a35,#090f20);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for logistics</p>
           <h3>Airlines &amp; Logistics</h3>
-          <p>Cargo bays, lounges, and logistics hubs protected with rapid-deployment fog. Trusted by aviation and freight companies across North America.</p>
+          <p>Cargo bays, freight depots, and logistics hubs protected with rapid-deployment fog. Trusted by aviation and freight companies across North America for high-value shipment security.</p>
         </div>
       </div>
 
+      <!-- RURAL CANADIAN PROPERTIES -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#1a1520,#0f0d15);font-size:2rem;">🇨🇦</div>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#152a18,#0d1c10);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 17l4-8 4 5 3-4 7 7H3z"/>
+            <path d="M8 17V9M8 9l-2 4M8 9l2 4"/>
+            <circle cx="17" cy="7" r="2"/>
+          </svg>
+        </div>
         <div class="app-card-body">
           <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for rural properties</p>
           <h3>Rural Canadian Properties</h3>
-          <p>Remote farms, ranches, and rural properties across Canada are protected with the battery-powered Sentinel Go, no power line, no problem. Works everywhere.</p>
+          <p>Remote farms, ranches, and rural properties across Canada are protected with the battery-powered Sentinel Go — no power line required, no WiFi needed. Works anywhere, deploys the same second an alarm triggers.</p>
         </div>
       </div>
 
+      <!-- CASH-IN-TRANSIT -->
       <div class="app-card reveal">
-        <div class="app-card-img" style="background:linear-gradient(135deg,#1f1a10,#131008);font-size:2rem;">🛺</div>
-        <div class="app-card-body">
-          <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for cash handling</p>
-          <h3>Cash-in-Transit</h3>
-          <p>Protect cash handling areas, counting rooms, and transit vehicles. Security fog creates an immediate deterrent barrier when any unauthorized access is detected.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- WHY CHOOSE SMOKE SCREEN -->
-<section class="section" style="background: rgba(255,255,255,0.02);">
-  <div class="container">
-    <div class="grid-2" style="gap: 64px; align-items: center;">
-      <div class="reveal">
-        <div class="label">Why Choose Smoke Screen?</div>
-        <h2>Four reasons security professionals trust us</h2>
-        <ul class="why-list">
-          <li>Rapid deployment, fog fills the room in under 30 seconds from alarm trigger</li>
-          <li>Proven worldwide in 50+ countries and thousands of active installations</li>
-          <li>Easy integration with all major alarm panels and CCTV systems</li>
-          <li>Proactive deterrence, stops the crime, not just records it</li>
-        </ul>
-        <a href="contact.html" class="btn btn-primary">Get a Quote for Your Site</a>
-      </div>
-      <div class="reveal" style="background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); padding:40px; text-align:center;">
-        <div style="font-size:4rem; margin-bottom:20px;">🛡️</div>
-        <h3 style="margin-bottom:8px;">Not sure which solution<br/>is right for you?</h3>
-        <p style="margin-bottom:28px;">Our USA &amp; Canada team will assess your site and recommend the best system, free of charge, no obligation.</p>
-        <a href="contact.html" class="btn" style="width:100%; justify-content:center; background:#D97706; border-color:#D97706; color:#fff; font-weight:700;">Contact Us Today</a>
-        <p style="font-size:0.78rem; color:var(--muted); margin-top:16px;">Response within 24 hours</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA BANNER -->
-<section class="section" style="padding-top:0;">
-  <div class="container">
-    <div class="cta-banner reveal">
-      <div>
-        <h2>Protect your business today</h2>
-        <p>Join thousands of businesses across the USA and Canada using Smoke Screen.</p>
-      </div>
-      <a href="contact.html" class="btn btn-white btn-lg">Request a Free Quote →</a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-        <div class="reseller-badge-wrap" style="margin-bottom:32px;">
-      <img src="images/reseller-badge-dark.jpeg" width="120" height="120" alt="Smoke Screen Official Authorized Reseller USA & Canada 2026" style="border-radius:50%;display:block;" />
-      <div>
-        <p style="margin-bottom:12px;">Authorized distributor of Smoke Screen security fog systems across the United States and Canada. All products are genuine Smoke Screen manufactured and certified to international safety standards.</p>
-        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px;">
-          <div style="display:flex;align-items:center;gap:5px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:5px 10px;" title="ISO 9001 Quality Management — Re-certified December 2024">
-            <svg viewBox="0 0 56 20" width="56" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="56" height="20" rx="3" fill="#002D62"/><text x="28" y="14" text-anchor="middle" fill="#fff" font-size="9" font-weight="800" font-family="Inter,sans-serif" letter-spacing="0.3">ISO 9001</text></svg>
-            <span style="font-size:0.65rem;color:var(--muted);font-weight:600;white-space:nowrap;">Certified</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:5px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:5px 10px;" title="ISO 14001 Environmental Management — Re-certified December 2024">
-            <svg viewBox="0 0 62 20" width="62" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="62" height="20" rx="3" fill="#2D6A2D"/><text x="31" y="14" text-anchor="middle" fill="#fff" font-size="9" font-weight="800" font-family="Inter,sans-serif" letter-spacing="0.3">ISO 14001</text></svg>
-            <span style="font-size:0.65rem;color:var(--muted);font-weight:600;white-space:nowrap;">Certified</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:5px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:6px;padding:5px 10px;" title="IFSEC International Award Winners">
-            <svg viewBox="0 0 54 20" width="54" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="54" height="20" rx="3" fill="#7B2500"/><text x="27" y="14" text-anchor="middle" fill="#fff" font-size="8.5" font-weight="800" font-family="Inter,sans-serif" letter-spacing="0.2">IFSEC ★</text></svg>
-            <span style="font-size:0.65rem;color:var(--muted);font-weight:600;white-space:nowrap;">Award</span>
-          </div>
-          <div style="display:flex;align-items:center;gap:7px;background:#fff;border:1px solid rgba(255,255,255,0.2);border-radius:6px;padding:5px 12px;" title="British Security Industry Association Member">
-            <img src="images/bsia-logo.svg" alt="BSIA Member" style="height:28px;width:auto;display:block;" />
-            <span style="font-size:0.65rem;color:#111;font-weight:700;white-space:nowrap;line-height:1.2;">BSIA<br/>Member</span>
-          </div>
-        </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <svg viewBox="0 0 1451.04 556.87" xmlns="http://www.w3.org/2000/svg" aria-label="Smoke Screen" style="height:26px;width:auto;">
-            <path fill="#FFFFFF" d="M34.7,173.49a114.91,114.91,0,0,0,81.22,33.57c22.5,0,36.23-9.54,36.23-21.74,0-14.49-16.4-20.21-43.47-25.93C66.73,151,8,140.33,8,80.08,8,37.37,44.23.38,109.44.38c40.8,0,76.26,12.2,103.34,35.45L176.93,82.74c-21.36-17.54-49.19-26.31-71.69-26.31-21.73,0-30.12,8.77-30.12,19.83,0,13.34,15.64,17.92,43.84,23.26,42,8.76,99.92,21,99.92,78.55,0,51.1-37.75,85-106,85-51.47,0-87.31-16-112.86-40.43Z M472.48,86.94,408,258.53h-29L315,86.94V258.53H249.4V4.19h91.13l53,144.14L446.93,4.19h91.14V258.53H472.48Z M707,0c77.79,0,135.75,54.15,135.75,131.55S784.81,263.11,707,263.11,570.9,209,570.9,131.55,629.23,0,707,0Zm0,58c-42.33,0-69.39,32-69.39,73.6,0,41.18,27.06,73.59,69.39,73.59,42,0,69-32.41,69-73.59C776,90,749,58,707,58Z M958.73,162.81l-17.16,21.36v74.36H876V4.19h65.59V108.66L1019.74,4.19h80.84l-98.76,119,104.1,135.37h-80.46Z M1125.39,4.19h186.47V59.48H1191V101.8h118.2v55.67H1191v45.77h120.88v55.29H1125.39Z M34.7,467.26a114.94,114.94,0,0,0,81.22,33.56c22.5,0,36.23-9.54,36.23-21.74,0-14.49-16.4-20.21-43.47-25.93C66.73,444.76,8,434.09,8,373.84c0-42.71,36.23-79.7,101.44-79.7,40.8,0,76.26,12.21,103.34,35.47L176.93,376.5c-21.36-17.54-49.19-26.3-71.69-26.3C83.51,350.2,75.12,359,75.12,370c0,13.34,15.64,17.92,43.84,23.26,42,8.77,99.92,21,99.92,78.56,0,51.09-37.75,85-106,85-51.47,0-87.31-16-112.86-40.42Z M236.43,425.31c0-78.55,59.49-131.55,135.76-131.55,63.3,0,96.09,34.69,112.87,68.26L428.63,388.7c-8.4-20.2-30.13-37-56.44-37-39.66,0-69,32-69,73.59s29.36,73.59,69,73.59c26.31,0,48-16.78,56.44-37l56.43,26.7c-16.4,32.79-49.57,68.25-112.87,68.25C295.92,556.87,236.43,503.48,236.43,425.31Z M612.45,466.12H578.89v86.17h-65.6V298H640.66c56.44,0,88.47,37.37,88.47,84.65,0,44.23-27.08,67.88-50.71,76.27l51.85,93.42H655.16Zm18.3-112.88H578.89v57.21h51.86c17.16,0,31.65-11.07,31.65-28.61S647.91,353.24,630.75,353.24Z M765.38,298H951.85v55.29H831v42.33H949.18v55.67H831V497H951.85v55.29H765.38Z M990,298h186.47v55.29H1055.59v42.33H1173.8v55.67H1055.59V497h120.88v55.29H990Z M1280.21,398.62V552.29h-65.59V298h67.5l103,146.43V298h66V552.29h-63.3Z"/>
+        <div class="app-card-img" style="background:linear-gradient(150deg,#1f1a10,#141008);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0110 0v4"/>
+            <circle cx="12" cy="16" r="1" fill="rgba(255,255,255,0.82)"/>
           </svg>
         </div>
-        <p>Professional security fog systems protecting homes and businesses across the United States and Canada.</p>
+        <div class="app-card-body">
+          <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for cash handling</p>
+          <h3>ATM &amp; Cash-in-Transit</h3>
+          <p>Protect cash handling areas, counting rooms, ATM vestibules, and transit vehicles. Security fog creates an immediate deterrent barrier the moment any unauthorized access is detected.</p>
+        </div>
       </div>
-      <div class="footer-col">
-        <h5>Products</h5>
-        <ul>
-          <li><a href="products.html#sentinel-sc20">Sentinel SC20</a></li>
-          <li><a href="products.html#sentinel-go">Sentinel Go</a></li>
-          <li><a href="products.html#sentinel-s35">Sentinel S35</a></li>
-          <li><a href="products.html#sentinel-s70">Sentinel S70</a></li>
-          <li><a href="products.html#sentinel-s150">Sentinel S150</a></li>
-        </ul>
+
+      <!-- CAR DEALERSHIPS (NEW) -->
+      <div class="app-card reveal">
+        <div class="app-card-img" style="background:linear-gradient(150deg,#1a2030,#0f1520);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="9" width="22" height="10" rx="1"/>
+            <path d="M4 9l3-5h10l3 5"/>
+            <circle cx="7.5" cy="19" r="2"/>
+            <circle cx="16.5" cy="19" r="2"/>
+            <path d="M5.5 19H1v-3M18.5 19H23v-3"/>
+          </svg>
+        </div>
+        <div class="app-card-body">
+          <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for car dealerships</p>
+          <h3>Car Dealerships</h3>
+          <p>Vehicle showrooms and outdoor lots are targeted for key theft, joyriding, and catalytic converter raids. Security fog protects service bays, parts stores, and indoor showrooms with instant zero-visibility deployment.</p>
+        </div>
       </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="applications.html">Applications</a></li>
-          <li><a href="videos.html">Videos</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="https://www.smoke-screen.com" target="_blank" rel="noopener">Global Site &#x2197;</a></li>
-        </ul>
+
+      <!-- CANNABIS DISPENSARIES (NEW) -->
+      <div class="app-card reveal">
+        <div class="app-card-img" style="background:linear-gradient(150deg,#152518,#0d170f);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 8C8 10 5.9 16.17 3.82 19C2 17 2 13 2 12C2 6 7 2 12 2C12 2 9 6 9 8C9 8 14 7 17 8Z"/>
+            <path d="M9 8C14 7 17 8 17 8C19 12 16 18 12 21C12 21 11 19 11 17C11 15 12 14 12 14"/>
+            <line x1="12" y1="14" x2="12" y2="22"/>
+          </svg>
+        </div>
+        <div class="app-card-body">
+          <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for dispensaries</p>
+          <h3>Cannabis Dispensaries</h3>
+          <p>Licensed dispensaries in Canada and legal US states hold significant cash and controlled stock, making them high-priority targets. Smoke Screen meets regulatory security requirements and satisfies insurance mandates for active deterrents.</p>
+        </div>
       </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:info@smoke-screen.com">info@smoke-screen.com</a></li>
-          <li><a href="mailto:sophie@smoke-screen.co.uk">sophie@smoke-screen.co.uk</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Smoke Screen USA &amp; Canada. Authorized reseller of Smoke Screen security products.</p>
-    </div>
-  </div>
-</footer>
-<script src="js/main.js"></script>
-</body>
-</html>
+
+      <!-- DATA CENTRES (NEW) -->
+      <div class="app-card reveal">
+        <div class="app-card-img" style="background:linear-gradient(150deg,#0d1f35,#081528);">
+          <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.82)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+            <line x1="6" y1="6" x2="6.01" y2="6"/>
+            <line x1="6" y1="18" x2="6.01" y2="18"/>
+            <line x1="10" y1="6" x2="18" y2="6"/>
+            <line x1="10" y1="18" x2="18" y2="18"/>
+          </svg>
+        </div>
+        <div class="app-card-body">
+          <p class="app-card-tag" style="font-size:0.72rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-bottom:6px;">Security fog for data centres</p>
+          <h3>Data Centres &amp; Server Rooms</h3>
+          <p>Physical access 
